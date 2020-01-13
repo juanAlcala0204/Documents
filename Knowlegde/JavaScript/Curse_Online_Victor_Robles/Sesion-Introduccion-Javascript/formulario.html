@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio DOM, Eventos y Funciones</title>
+        <script src="js/Ejercicios_Proyectos/ejercicio_dom.js"></script>
+    </head>
+    <style>
+        /* Styles Form */
+        .box{
+            width: 250px;
+            height: 250px;
+            float: left;
+            margin: 20px;
+        }
+        .dashed{
+            border: 3px dashed black;
+            padding: 5px;
+        }
+    </style>
+    <body>
+        <!--
+            1. Formulario campos: Nombre, Apellidos y Edad.
+            2. Botón de enviar el formulario: Eventos submit
+            3. Mostrar datos por pantalla.
+            4. Tener un botón que al darle click nos muestra los datos actuales del formulario
+        -->
+        <!-- NOTA: Si se coloca onsubmit="return false;" en el form, no redireccionará la página -->
+        <h1>Ejercicio DOM, Eventos y Funciones.</h1>
+        <div class="box">
+            <form action="#" method="POST" id="frm_form_dates" name="frm_form_dates" onsubmit="return false;">
+
+                </br><label for="inp_name">Nombre</label></br>
+                <input type="text" id="inp_name" name="inp_name"></br>
+                <span id="fail_name" name="fail_name"></span></br>
+
+                <label for="inp_surname">Apellidos</label></br>
+                <input type="text" id="inp_surname" name="inp_surname"></br>
+                <span id="fail_surname" name="fail_surname"></span></br>
+
+                <label for="inp_age">Edad</label></br>
+                <input type="text" id="inp_age" name="inp_age"></br>
+                <span id="fail_age" name="fail_age"></span></br>
+
+                <button type="submit" id="btn_submit" name="btn_submit">Enviar</button><br>
+            </form>
+        </div> 
+        <div class="box dashed">
+            <h3>Información del usuario</h3>
+            <hr>
+        </div>
+    </body>
+</html>

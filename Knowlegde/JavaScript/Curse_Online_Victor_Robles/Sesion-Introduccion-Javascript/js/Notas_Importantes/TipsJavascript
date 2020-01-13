@@ -1,0 +1,18 @@
+
+Funcion para obtener o validar que el dato sea un numero:
+
+isNaN(variable) =>  Esta función nos sirve para validar con JavaScript que la variable sea un número.
+
+Para convertir un número a String se puede usar un metodo que se llama .toStrign();
+
+numeroaconvertir.toString()
+
+SUPER IMPORTANTE LEER PLANITLLAS DE TEXTO.
+
+
+LEER PARA EVENTOS IMPORTANTES DE JAVASCRIPT ARCHIVO N* 20 Y 21*
+
+Para obtener y añadir datos en un html con append mirar el archivo formulario.html entre otras cosas interesantes 
+
+
+isNaN(param) sirve para ver si es un número, retorna true si no es un número, false si es un númeor.
