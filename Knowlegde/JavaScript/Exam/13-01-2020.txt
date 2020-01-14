@@ -361,4 +361,38 @@ for (let i = 0; i < matriz.length; i++) {
 
 Objetos Javascript 
 
+De que manera se crean los objetos en javascript?
+
+let objetoName = {};
+
+objetoName = {
+	nombre : "Juan",
+	edad: 13,
+	apellido: "Alcala"
+}
+
+Un array de objetos sería
+
+let arrayName = [];
+
+arrayName = [{nombre: "Juan"},{nombre: "Camilo"}];
+
+¿Como recorrer un objeto?
+
+Forma 1 si es solamente un objeto de por si
+
+for ( let valorPosicion in objetoName ) {
+	objetoName[valorPosicion]
+}
+
+Forma 2 si es un array de objetos
+
+objetoName.forEach( (elemento, indice) => {
+	objetoName[elemento]
+});
+
+Dato curioso, hacer esto para acceder a los valores
+coso.members[1].powers[2] 
+es igual a yo hacer esto
+coso['members'][1]['powers'][2]
 
