@@ -1,0 +1,75 @@
+¿Qué es Javascript?
+
+Javascript es un lenguaje de scripting multiplataforma. Siendo así un lenguaje interpretado, este lenguaje se ejecuta
+por el lado del servidor, sirve para darle interactividad a una página web.
+
+¿Como funciona Javascript?
+
+Javascript funciona a través de algo titulado Javascript engine, este es el motor de javascript cada navegador cuenta
+con su propio motor de javascript. Como ejemplo tenemos chrome que cuenta con un motor titulado ENGINE V8.
+
+¿Como se compone dicho motor?
+
+El motor se divide en dos partes, Memory head y Callstack ( Llamado de pilas )
+
+El memory head se encarga de la distribución de espacio en memoria del motor
+
+Las CallStack se encarga técnicamente de expresar en que punto de ejecución se encuentra el código. Explicado con un ejemplo
+se da a entender que esta funciona como una pila. Cuando se hace un llamado a una función entrará en la callstack y será 
+ejecutado sucesivamente. Entonces como un pila el primero en entrar a la pila será el último en salir y el último en 
+entrar es el primero en salir.
+
+Esto da a enteder algo importante del lenguaje JAVASCRIPT ES ÚNICAMENTE UN LENGUAJE DE UN SOLO SUBPROCESO ( Realiza un solo
+proceso a la vez )
+
+------------------
+
+Variables en Javascript
+
+Existen tres formas de declarar variables en Javascript. 
+
+Let - Se define como una variable local, esto es por la razón de su scope, el scope de este tipo de variable es únicamente
+      dentro del contexto de declaración, dígamos si se declara dentro de una función su scope será solo dentro de la 
+      función
+
+Var - Se define como variable global, puesto que tiene un scope global, en teoría desde cualquier parte del código se podría
+      acceder a este tipo de variables.
+
+Const - Se define como un variable de scope local y inmutable, esto infiere a que el valor dentro de esta variable no podrá
+        ser modificado.
+
+--------------------------
+
+¿Qué es Scope?
+
+Scope también entendido como "Alcance" se define como la accesibilidad que tienes de una variable. El scope depende
+del tipo de declaración de la variable y su contexto.
+
+¿Qué es Hoisting ?
+
+Hoisting no es como tal un término técnica dentor de javascript pero es una manera o definición de explicar la manera
+en que se interpreta el código Javascript. ¿Por qué esto?, esto hace entender un poco la funcionalidad del scope.
+En javascript, cuando se interpreta el código la declaración de variables se eleva al inicio de su contexto, por esta razón
+puedes llamar un función declarada antes de que en el código como tal sea declarada. Puesto que en el momento que se
+interprete el código la función declarada se elevará el inicio del contexto. IMPORTANTE el concepto de hoisting solo aplica
+como tal en variables y/o funciones declaradas.
+
+-----------------------------
+FALLE
+Tipos de Datos en JavaScript
+
+Existen 6 tipos de datos en JavaScript:
+
+Primitivos
+-Number : Números
+-String : String
+-Boolean : Expresión de verdadero o falso
+-null : Una palabra clave para la notación de un valor nulo
+-undefined : Plabra clave para la notación de una variable cuyo valor no ha sido definido
+-Symbol : Tipo de dato cuyos casos son unicos e inmutables
+
+y existiría otro dato 
+-Object
+
+
+---------------------------------------
